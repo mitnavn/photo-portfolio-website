@@ -1,23 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+import LandingPage from './routes/LandingPage.js';
+import Navigbar from './routes/Navbar.js';
+import About from './routes/About';
+import { Routes, Route } from 'react-router-dom';
+import ErrorPage from './routes/ErrorPage';
+import Contact from './routes/Contact';
+import Art from './routes/Art';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Container } from 'react-bootstrap';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="App-body">
+      <Container >
+        <div className="App-navbar">
+          <Navigbar />
+        </div>
+        <Routes>
+          <Route path="/works/:category" element={<Art />}>
+            <Route path='/works/:category/:photoId' element={<Art />}/>
+          </Route>
+          <Route path="/" element={<LandingPage />}>
+            <Route path=':photoId' element={<LandingPage />}/>
+          </Route>
+          <Route path="/about" element={<About />}/>
+          <Route path="/contact" element={<Contact />}/>
+          <Route path="*" element={<ErrorPage />}/>
+        </Routes>
+      </Container>
+      </div>
     </div>
   );
 }
