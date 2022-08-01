@@ -18,7 +18,7 @@ function  About() {
                 <p className="About-text-contact">Contact:</p>
                 <Col>
                     <span><FiMail className="About-icon"/></span>
-                    <Button variant="link" className="FooterLinks" onClick={() => window.location = 'mailto:yourmail@gmail.com'}>Send an e-mail</Button>
+                    <Button variant="link" className="FooterLinks" onClick={() => window.location = 'mailto:sokuranna@outlook.com'}>Send an e-mail</Button>
                 </Col>
                 <Col>
                     <span><FiInstagram className="About-icon" /></span>

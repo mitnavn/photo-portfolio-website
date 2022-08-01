@@ -4,12 +4,12 @@ import Navigbar from './routes/Navbar.js';
 import About from './routes/About';
 import { Routes, Route } from 'react-router-dom';
 import ErrorPage from './routes/ErrorPage';
-import Contact from './routes/Contact';
 import Art from './routes/Art';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container } from 'react-bootstrap';
 
 function App() {
+
   return (
     <div className="App">
       <div className="App-body">
@@ -25,7 +25,6 @@ function App() {
             <Route path=':photoId' element={<LandingPage />}/>
           </Route>
           <Route path="/about" element={<About />}/>
-          <Route path="/contact" element={<Contact />}/>
           <Route path="*" element={<ErrorPage />}/>
         </Routes>
       </Container>

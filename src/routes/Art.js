@@ -2,7 +2,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import images from '../img/index1.js';
 import Slider from './Slider.js';
 import { Row, Col } from 'react-bootstrap';
-import {useState, useEffect, useCallback} from 'react';
+import {useState, useEffect} from 'react';
 import { fadeIn } from 'react-animations';
 import styled, { keyframes } from 'styled-components';
 import PropagateLoader from 'react-spinners/PropagateLoader';
@@ -15,10 +15,10 @@ function Art() {
     let navigate = useNavigate();
 
     const [loading, setLoading] = useState(false);
-    let loadCategory = category.replace(/-/g, " ");
-    
+    let newCategory = category.replace(/-/g, " ");
+    let loadCategory = newCategory.charAt(0).toUpperCase() + newCategory.slice(1).toLowerCase();
+   
     const [imagesToLoad, setImagesToLoad]  = useState(filteredImages.map(i=> i.imagePreviewSrc));
-    console.log("Init");
 
     useEffect(() => {
         if(!photoId) {
@@ -37,19 +37,16 @@ function Art() {
               }
               
               Promise.all(filteredImages.map(image => loadImage(image)))
-                .then(() => {
-                })
                 .catch(err => console.log("Error", err))
         } else if (photoId) {
             setLoading(true);
         }
-        }, [filteredImages, photoId])
+    }, [filteredImages, photoId, imagesToLoad])
 
     function removeImage(imageSrc, imagesToLoad) {
         imagesToLoad.splice(imagesToLoad.indexOf(imageSrc), 1);
         setImagesToLoad(imagesToLoad);
         if(imagesToLoad.length === 0) {
-            console.log('setLoading(true)');
             setLoading(true);
         }
     }
@@ -67,9 +64,7 @@ function Art() {
     }
 
     function navBack(index){
-        navigate("" + index); 
-        console.log('setLoading()', imagesToLoad.length);
-
+        navigate("" + index);
         setLoading(imagesToLoad.length === 0);
     }
 
@@ -89,11 +84,10 @@ function Art() {
                 </Fade>}
             {loading && !photoId &&
                 <div className="Art-div">
-                    <Row lg={6} md={5} sm={5} xs={5}>
+                    <Row >
                         {filteredImages.map((img, i) =>
-                            <Col key={i} className="Art-col">
+                            <Col md='auto' xs="2" key={i} className="Art-col">
                                 <img
-                                onLoad={()=> removeImage(img.imagePreviewSrc, imagesToLoad)}
                                 src={img.imagePreviewSrc}
                                 onClick={() => clickImg(i)} alt={img.name}
                                 key={img.name}

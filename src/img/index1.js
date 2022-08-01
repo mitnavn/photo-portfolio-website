@@ -386,128 +386,128 @@ const images = [
     {
         imageSrc: require('./img-65.jpg'),
         imagePreviewSrc: require('./img-65-sm.jpg'),
-        category: "Street-Style",
-        name: "street-style-01"
+        category: "Street-Style-i",
+        name: "street-style-1-01"
     },
     {
         imageSrc: require('./img-66.jpg'),
         imagePreviewSrc: require('./img-66-sm.jpg'),
-        category: "Street-Style",
-        name: "street-style-02"
+        category: "Street-Style-i",
+        name: "street-style-1-02"
     },
     {
         imageSrc: require('./img-67.jpg'),
         imagePreviewSrc: require('./img-67-sm.jpg'),
-        category: "Street-Style",
-        name: "street-style-03"
+        category: "Street-Style-i",
+        name: "street-style-1-03"
     },
     {
         imageSrc: require('./img-68.jpg'),
         imagePreviewSrc: require('./img-68-sm.jpg'),
-        category: "Street-Style",
-        name: "street-style-04"
+        category: "Street-Style-i",
+        name: "street-style-1-04"
     },
     {
         imageSrc: require('./img-69.jpg'),
         imagePreviewSrc: require('./img-69-sm.jpg'),
-        category: "Street-Style",
-        name: "street-style-05"
+        category: "Street-Style-i",
+        name: "street-style-1-05"
     },
     {
         imageSrc: require('./img-70.jpg'),
         imagePreviewSrc: require('./img-70-sm.jpg'),
-        category: "Street-Style",
-        name: "street-style-06"
+        category: "Street-Style-i",
+        name: "street-style-1-06"
     },
     {
         imageSrc: require('./img-71.jpg'),
         imagePreviewSrc: require('./img-71-sm.jpg'),
-        category: "Street-Style",
-        name: "street-style-07"
+        category: "Street-Style-i",
+        name: "street-style-1-07"
     },
     {
         imageSrc: require('./img-72.jpg'),
         imagePreviewSrc: require('./img-72-sm.jpg'),
-        category: "Street-Style",
-        name: "street-style-08"
+        category: "Street-Style-ii",
+        name: "street-style-2-01"
     },
     {
         imageSrc: require('./img-73.jpg'),
         imagePreviewSrc: require('./img-73-sm.jpg'),
-        category: "Street-Style",
-        name: "street-style-09"
+        category: "Street-Style-ii",
+        name: "street-style-2-02"
     },
     {
         imageSrc: require('./img-74.jpg'),
         imagePreviewSrc: require('./img-74-sm.jpg'),
-        category: "Street-Style",
-        name: "street-style-10"
+        category: "Street-Style-ii",
+        name: "street-style-2-03"
     },
     {
         imageSrc: require('./img-75.jpg'),
         imagePreviewSrc: require('./img-75-sm.jpg'),
-        category: "Street-Style",
-        name: "street-style-11"
+        category: "Street-Style-ii",
+        name: "street-style-2-04"
     },
     {
         imageSrc: require('./img-76.jpg'),
         imagePreviewSrc: require('./img-76-sm.jpg'),
-        category: "Street-Style",
-        name: "street-style-12"
+        category: "Street-Style-ii",
+        name: "street-style-2-05"
     },
     {
         imageSrc: require('./img-77.jpg'),
         imagePreviewSrc: require('./img-77-sm.jpg'),
-        category: "Street-Style",
-        name: "street-style-13"
+        category: "Street-Style-ii",
+        name: "street-style-2-06"
     },
     {
         imageSrc: require('./img-78.jpg'),
         imagePreviewSrc: require('./img-78-sm.jpg'),
-        category: "Street-Style",
-        name: "street-style-14"
+        category: "Street-Style-ii",
+        name: "street-style-2-07"
     },
     {
         imageSrc: require('./img-79.jpg'),
         imagePreviewSrc: require('./img-79-sm.jpg'),
-        category: "Street-Style",
-        name: "street-style-15"
+        category: "Street-Style-ii",
+        name: "street-style-2-08"
     },
     {
         imageSrc: require('./img-80.jpg'),
         imagePreviewSrc: require('./img-80-sm.jpg'),
-        category: "Street-Style",
-        name: "street-style-16"
+        category: "Street-Style-ii",
+        name: "street-style-2-09"
     },
     {
         imageSrc: require('./img-81.jpg'),
         imagePreviewSrc: require('./img-81-sm.jpg'),
-        category: "Street-Style",
-        name: "street-style-17"
+        category: "Street-Style-ii",
+        name: "street-style-2-10"
     },
     {
         imageSrc: require('./img-82.jpg'),
         imagePreviewSrc: require('./img-82-sm.jpg'),
-        category: "Street-Style",
-        name: "street-style-18"
+        category: "Street-Style-ii",
+        name: "street-style-2-11"
     },
     {
         imageSrc: require('./img-83.jpg'),
         imagePreviewSrc: require('./img-83-sm.jpg'),
-        category: "Street-Style",
-        name: "street-style-19"
+        category: "Street-Style-ii",
+        name: "street-style-2-12"
     },
     {
         imageSrc: require('./img-84.jpg'),
         imagePreviewSrc: require('./img-84-sm.jpg'),
-        category: "Street-Style",
-        name: "street-style-20"
+        category: "Street-Style-ii",
+        name: "street-style-2-13"
     },
     {
         imageSrc: require('./img-85.jpg'),
         imagePreviewSrc: require('./img-85-sm.jpg'),
-        category: "Street-Style",
-        name: "street-style-21"
+        category: "Street-Style-ii",
+        name: "street-style-2-14"
     },
     {
         imageSrc: require('./img-86.jpg'),
@@ -712,6 +712,108 @@ const images = [
         imagePreviewSrc: require('./img-119-sm.jpg'),
         category: "Wedding-ii",
         name: "wedding-2-18"
+    },
+    {
+        imageSrc: require('./img-120.jpg'),
+        imagePreviewSrc: require('./img-120-sm.jpg'),
+        category: "Film",
+        name: "film-01"
+    },
+    {
+        imageSrc: require('./img-121.jpg'),
+        imagePreviewSrc: require('./img-121-sm.jpg'),
+        category: "Film",
+        name: "film-02"
+    },
+    {
+        imageSrc: require('./img-122.jpg'),
+        imagePreviewSrc: require('./img-122-sm.jpg'),
+        category: "Film",
+        name: "film-03"
+    },
+    {
+        imageSrc: require('./img-123.jpg'),
+        imagePreviewSrc: require('./img-123-sm.jpg'),
+        category: "Film",
+        name: "film-04"
+    },
+    {
+        imageSrc: require('./img-124.jpg'),
+        imagePreviewSrc: require('./img-124-sm.jpg'),
+        category: "Film",
+        name: "film-05"
+    },
+    {
+        imageSrc: require('./img-125.jpg'),
+        imagePreviewSrc: require('./img-125-sm.jpg'),
+        category: "Film",
+        name: "film-06"
+    },
+    {
+        imageSrc: require('./img-126.jpg'),
+        imagePreviewSrc: require('./img-126-sm.jpg'),
+        category: "Film",
+        name: "film-07"
+    },
+    {
+        imageSrc: require('./img-127.jpg'),
+        imagePreviewSrc: require('./img-127-sm.jpg'),
+        category: "Film",
+        name: "film-08"
+    },
+    {
+        imageSrc: require('./img-128.jpg'),
+        imagePreviewSrc: require('./img-128-sm.jpg'),
+        category: "Film",
+        name: "film-09"
+    },
+    {
+        imageSrc: require('./img-129.jpg'),
+        imagePreviewSrc: require('./img-129-sm.jpg'),
+        category: "Film",
+        name: "film-10"
+    },
+    {
+        imageSrc: require('./img-130.jpg'),
+        imagePreviewSrc: require('./img-130-sm.jpg'),
+        category: "Film",
+        name: "film-11"
+    },
+    {
+        imageSrc: require('./img-131.jpg'),
+        imagePreviewSrc: require('./img-131-sm.jpg'),
+        category: "Film",
+        name: "film-12"
+    },
+    {
+        imageSrc: require('./img-132.jpg'),
+        imagePreviewSrc: require('./img-132-sm.jpg'),
+        category: "Film",
+        name: "film-13"
+    },
+    {
+        imageSrc: require('./img-133.jpg'),
+        imagePreviewSrc: require('./img-133-sm.jpg'),
+        category: "Film",
+        name: "film-14"
+    },
+    {
+        imageSrc: require('./img-134.jpg'),
+        imagePreviewSrc: require('./img-134-sm.jpg'),
+        category: "Film",
+        name: "film-15"
+    },
+    {
+        imageSrc: require('./img-135.jpg'),
+        imagePreviewSrc: require('./img-135-sm.jpg'),
+        category: "Film",
+        name: "film-16"
+    },
+    {
+        imageSrc: require('./img-136.jpg'),
+        imagePreviewSrc: require('./img-136-sm.jpg'),
+        category: "Film",
+        name: "film-17"
     }
 ];
 

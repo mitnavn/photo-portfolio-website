@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: black;
 }
 
 .App-body {
@@ -70,6 +71,10 @@ img::selection {
   letter-spacing: 1px;
 }
 
+.nav-link-uppercase {
+  text-transform: uppercase !important;
+}
+
 .Menu {
   display: block;
   margin-top: 30px;
@@ -102,7 +107,7 @@ img::selection {
 }
 
 .LoadPageText {
-  font-size: calc(10px + 1vmin);
+  font-size: calc(8px + 1vmin);
 }
 
 .Slider-items {
@@ -176,7 +181,7 @@ img::selection {
 }
 
 .Art-div {
-  width: 80%;
+  width: 90%;
   height: auto;
   margin: auto;
 }
@@ -249,7 +254,7 @@ img::selection {
     font-size: calc(8px + 1vmin) !important;
   }
   .LoadPageText {
-    font-size: calc(10px + 2vmin);
+    font-size: calc(8px + 1vmin);
   }
   /* .Art-div {
     width: 85%;
@@ -321,7 +326,7 @@ img::selection {
     width: 80%;
   }
   .LoadPageText {
-    font-size: calc(10px + 2vmin);
+    font-size: calc(8px + 1vmin);
   }
   .Slider-back-btn {
     font-size: calc(10px + 1vmin) !important;

@@ -20,7 +20,7 @@ function LandingPage() {
             <div>
                 <LandingSlider photoId={photoId} navNext={navNext} navPrev={navPrev} />
             </div>
-            <div className="App-footer">
+            <div className='FooterLinks'>
                 <FooterLinks photoId={photoId}/>
             </div>
         </div>
