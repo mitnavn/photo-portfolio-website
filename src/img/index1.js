@@ -814,9 +814,141 @@ const images = [
         imagePreviewSrc: require('./img-136-sm.jpg'),
         category: "Film",
         name: "film-17"
+    },
+    {
+        imageSrc: require('./img-137.jpg'),
+        imagePreviewSrc: require('./img-137-sm.jpg'),
+        category: "Street-Style-i",
+        name: "street-style-1-08"
+    },
+    {
+        imageSrc: require('./img-138.jpg'),
+        imagePreviewSrc: require('./img-138-sm.jpg'),
+        category: "Street-Style-i",
+        name: "street-style-1-09"
+    },
+    {
+        imageSrc: require('./img-139.jpg'),
+        imagePreviewSrc: require('./img-139-sm.jpg'),
+        category: "Street-Style-i",
+        name: "street-style-1-10"
+    },
+    {
+        imageSrc: require('./img-140.jpg'),
+        imagePreviewSrc: require('./img-140-sm.jpg'),
+        category: "Street-Style-i",
+        name: "street-style-1-11"
+    },
+    {
+        imageSrc: require('./img-141.jpg'),
+        imagePreviewSrc: require('./img-141-sm.jpg'),
+        category: "Street-Style-i",
+        name: "street-style-1-12"
+    },
+    {
+        imageSrc: require('./img-142.jpg'),
+        imagePreviewSrc: require('./img-142-sm.jpg'),
+        category: "Street-Style-i",
+        name: "street-style-1-13"
+    },
+    {
+        imageSrc: require('./img-143.jpg'),
+        imagePreviewSrc: require('./img-143-sm.jpg'),
+        category: "Street-Style-i",
+        name: "street-style-1-14"
+    },
+    {
+        imageSrc: require('./img-144.jpg'),
+        imagePreviewSrc: require('./img-144-sm.jpg'),
+        category: "Street-Style-i",
+        name: "street-style-1-15"
+    },
+    {
+        imageSrc: require('./img-145.jpg'),
+        imagePreviewSrc: require('./img-145-sm.jpg'),
+        category: "Street-Style-i",
+        name: "street-style-1-16"
+    },
+    {
+        imageSrc: require('./img-146.jpg'),
+        imagePreviewSrc: require('./img-146-sm.jpg'),
+        category: "Street-Style-i",
+        name: "street-style-1-17"
+    },
+    {
+        imageSrc: require('./img-147.jpg'),
+        imagePreviewSrc: require('./img-147-sm.jpg'),
+        category: "Street-Style-i",
+        name: "street-style-1-18"
+    },
+    {
+        imageSrc: require('./img-148.jpg'),
+        imagePreviewSrc: require('./img-148-sm.jpg'),
+        category: "Street-Style-i",
+        name: "street-style-1-19"
+    },
+    {
+        imageSrc: require('./img-149.jpg'),
+        imagePreviewSrc: require('./img-149-sm.jpg'),
+        category: "Street-Style-i",
+        name: "street-style-1-20"
+    },
+    {
+        imageSrc: require('./img-150.jpg'),
+        imagePreviewSrc: require('./img-150-sm.jpg'),
+        category: "Street-Style-i",
+        name: "street-style-1-21"
+    },
+    {
+        imageSrc: require('./img-151.jpg'),
+        imagePreviewSrc: require('./img-151-sm.jpg'),
+        category: "Street-Style-i",
+        name: "street-style-1-22"
+    },
+    {
+        imageSrc: require('./img-152.jpg'),
+        imagePreviewSrc: require('./img-152-sm.jpg'),
+        category: "Street-Style-ii",
+        name: "street-style-2-15"
+    },
+    {
+        imageSrc: require('./img-153.jpg'),
+        imagePreviewSrc: require('./img-153-sm.jpg'),
+        category: "Street-Style-ii",
+        name: "street-style-2-16"
+    },
+    {
+        imageSrc: require('./img-154.jpg'),
+        imagePreviewSrc: require('./img-154-sm.jpg'),
+        category: "Street-Style-ii",
+        name: "street-style-2-17"
+    },
+    {
+        imageSrc: require('./img-155.jpg'),
+        imagePreviewSrc: require('./img-155-sm.jpg'),
+        category: "Street-Style-ii",
+        name: "street-style-2-18"
+    },
+    {
+        imageSrc: require('./img-156.jpg'),
+        imagePreviewSrc: require('./img-156-sm.jpg'),
+        category: "Street-Style-ii",
+        name: "street-style-2-19"
+    },
+    {
+        imageSrc: require('./img-157.jpg'),
+        imagePreviewSrc: require('./img-157-sm.jpg'),
+        category: "Street-Style-ii",
+        name: "street-style-2-20"
+    },
+    {
+        imageSrc: require('./img-158.jpg'),
+        imagePreviewSrc: require('./img-158-sm.jpg'),
+        category: "Street-Style-ii",
+        name: "street-style-2-21"
     }
 ];
 
-// images.sort((a, b) => (a.category > b.category) ? 1 : ((b.category > a.category) ? -1 : 0));
+images.sort((a, b) => (a.category > b.category) ? 1 : ((b.category > a.category) ? -1 : 0));
 
 export default images;
