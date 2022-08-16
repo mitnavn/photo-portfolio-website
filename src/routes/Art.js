@@ -86,7 +86,7 @@ function Art() {
                 <div className="Art-div">
                     <Row >
                         {filteredImages.map((img, i) =>
-                            <Col md='auto' xs="2" key={i} className="Art-col">
+                            <Col md='2' sm="3" xs="3" key={i} className="Art-col">
                                 <img
                                 src={img.imagePreviewSrc}
                                 onClick={() => clickImg(i)} alt={img.name}

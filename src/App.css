@@ -15,6 +15,10 @@
   color: white;
 }
 
+.container {
+  background-color: black !important;
+}
+
 .LandingPage-body {
   min-height: 100vh;
   width: 100%;
@@ -82,6 +86,11 @@ img::selection {
 
 .Menu-icon {
   display: block;
+  color: grey;
+}
+
+.Menu-icon:hover {
+  color: white;
 }
 
 .Fade-menu {
@@ -128,6 +137,11 @@ img::selection {
 .Slider-icon {
   height: 100%;
   cursor: pointer;
+  color: grey;
+}
+
+.Slider-icon:hover {
+  color: white;
 }
 
 .Slider-item-next {
@@ -138,16 +152,20 @@ img::selection {
 }
 
 .Slider-item-image {
-  height: 700px;
+  height: 770px;
   width: 1050px;
   margin: auto;
 }
 
 .Slider-back-btn {
-  color: white !important;
+  color: grey !important;
   text-decoration: none !important;
   font-size: calc(6px + 1vmin) !important;
   padding: 30px 0 !important;
+}
+
+.Slider-back-btn:hover {
+  color: white !important;
 }
 
 .About {
@@ -176,9 +194,9 @@ img::selection {
   margin: 5px;
 }
 
-.About-icon {
+/* .About-icon {
   width: 25px;
-}
+} */
 
 .Art-div {
   width: 90%;
@@ -191,7 +209,7 @@ img::selection {
 }
 
 .Art-img {
-  width: 60%;
+  width: 80%;
   height: auto;
   cursor: pointer;
 }
@@ -323,10 +341,10 @@ img::selection {
     font-size: calc(10px + 1vmin) !important;
   }
   .Art-img {
-    width: 80%;
+    width: 69%;
   }
   .LoadPageText {
-    font-size: calc(8px + 1vmin);
+    font-size: calc(10px + 1vmin);
   }
   .Slider-back-btn {
     font-size: calc(10px + 1vmin) !important;

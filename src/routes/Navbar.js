@@ -17,26 +17,6 @@ function Navigbar() {
     }
 
     return (
-        // <Container>
-        //     <span onClick={showMenu} className="Menu" ><CgMenu className="Menu-icon"/></span>
-        //     {displayMenu &&
-        //         <div className="Fade-menu">
-        //             <Fade>
-        //                 <Nav defaultActiveKey="/" className="flex-column">
-        //                     <Nav.Link href="/">Home</Nav.Link>
-        //                     <Nav.Link href="/works/art">Art</Nav.Link>
-        //                     <Nav.Link href="/works/editorials">Editorials</Nav.Link>
-        //                     <Nav.Link href="/works/portraits">Portraits</Nav.Link>
-        //                     <Nav.Link href="/works/street-style">Street Style</Nav.Link>
-        //                     <Nav.Link href="/works/wedding-i">Wedding I</Nav.Link>
-        //                     <Nav.Link href="/works/wedding-ii">Wedding II</Nav.Link>
-        //                     <Nav.Link href="/about">About</Nav.Link>
-        //                 </Nav>
-        //         </Fade>
-        //       </div>
-        //     }
-        // </Container>
-
         <Container>
             <span onClick={showMenu} className="Menu" ><CgMenu className="Menu-icon"/></span>
 
@@ -50,11 +30,14 @@ function Navigbar() {
                         <Nav.Link href="/about">About</Nav.Link>
                         <br/>
                         <Nav.Link href="/works/art">Art</Nav.Link>
-                        <Nav.Link href="/works/editorials">Editorials</Nav.Link>
+                        <Nav.Link href="/works/editorial-i">Editorial I</Nav.Link>
+                        <Nav.Link href="/works/editorial-ii">Editorial II</Nav.Link>
+                        <Nav.Link href="/works/editorial-iii">Editorial III</Nav.Link>
+                        <Nav.Link href="/works/editorial-iv">Editorial IV</Nav.Link>
+                        <Nav.Link href="/works/editorial-v">Editorial V</Nav.Link>
                         <Nav.Link href="/works/film">Film</Nav.Link>
                         <Nav.Link href="/works/portraits">Portraits</Nav.Link>
                         <Nav.Link href="/works/street-style-i">Street style I</Nav.Link>
-                        <Nav.Link href="/works/street-style-ii">Street style II</Nav.Link>
                         <Nav.Link href="/works/wedding-i">Wedding I</Nav.Link>
                         <Nav.Link href="/works/wedding-ii">Wedding II</Nav.Link>
                    </Nav>
