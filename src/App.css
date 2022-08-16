@@ -319,7 +319,6 @@ img::selection {
   }
   .Slider-img {
     max-height: 440px;
-    width: fit-content;
   }
   .Slider-item-previous{
     text-align: left;
