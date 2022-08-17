@@ -239,10 +239,10 @@ img::selection {
 }
 
 @media screen and (max-width: 924px) {
-  .Fade-menu {
-    /* margin-top: 13px; */
-    /* background-color: rgba(0, 0, 0, 0.290); */
-  }
+  /* .Fade-menu {
+    margin-top: 13px;
+    background-color: rgba(0, 0, 0, 0.290);
+  } */
   .offcanvas-body {
     padding: 0 15px !important;
   }
