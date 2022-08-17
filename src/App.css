@@ -3,6 +3,10 @@
   background-color: black;
 }
 
+body {
+  background-color: black !important;
+}
+
 .App-body {
   background-color: black;
   min-height: 100vh;
@@ -14,10 +18,6 @@
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: white;
 }
-
-/* .container {
-  background-color: black !important;
-} */
 
 .LandingPage-body {
   min-height: 100vh;
