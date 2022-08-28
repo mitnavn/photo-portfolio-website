@@ -152,7 +152,7 @@ img::selection {
 }
 
 .Slider-item-image {
-  height: 770px;
+  height: 730px;
   width: 1050px;
   margin: auto;
 }
@@ -200,23 +200,53 @@ img::selection {
 
 .Art-div {
   width: 90%;
-  height: auto;
   margin: auto;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-auto-rows: 169px;
+  grid-auto-flow: dense;
 }
 
 .Art-col {
-  padding: 20px 0 !important ;
+  /* padding: 20px 0 !important ; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .Art-img {
-  width: 80%;
-  height: auto;
+  /* width: 80%;
+  height: auto; */
   cursor: pointer;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  display: inline-block;
+  object-fit: cover;
+}
+
+.img-wide {
+  grid-column: span 2;
+}
+
+.img-big {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.img-tall {
+  grid-row: span 2;
 }
 
 .Art-footer {
   width: 60%;
   margin: auto;
+}
+
+.About-portrait {
+  width: 15%;
 }
 
 .Contact-link {
@@ -231,6 +261,16 @@ img::selection {
   text-decoration: none;
 }
 
+@media screen and (min-width: 1400px) {
+  .container {
+    max-width: 75% !important;
+  }
+  .Art-div {
+    grid-template-columns: repeat(auto-fit, minmax(101px, 1fr));
+    grid-auto-rows: 161px;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .Slider-item-image {
     height: 650px;
@@ -239,10 +279,6 @@ img::selection {
 }
 
 @media screen and (max-width: 924px) {
-  /* .Fade-menu {
-    margin-top: 13px;
-    background-color: rgba(0, 0, 0, 0.290);
-  } */
   .offcanvas-body {
     padding: 0 15px !important;
   }
@@ -277,12 +313,6 @@ img::selection {
   .LoadPageText {
     font-size: calc(8px + 1vmin);
   }
-  /* .Art-div {
-    width: 85%;
-  } */
-  .Art-img {
-    width: 65%;
-  }
   .Slider-back-btn {
     font-size: calc(10px + 1vmin) !important;
     /* padding: 15px 0 !important; */
@@ -310,7 +340,6 @@ img::selection {
 @media screen and (max-width: 600px) {
   .Fade-menu {
     margin-top: 5px;
-    /* background-color: rgba(0, 0, 0, 0.290); */
   }
   .nav-link {
     color: white !important;
@@ -343,8 +372,11 @@ img::selection {
   .FooterLinks {
     font-size: calc(10px + 1vmin) !important;
   }
-  .Art-img {
-    width: 69%;
+  .Art-div {
+    width: 81%;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(71px, 1fr));
+    grid-auto-rows: 128px;
   }
   .LoadPageText {
     font-size: calc(10px + 1vmin);
@@ -352,6 +384,9 @@ img::selection {
   .Slider-back-btn {
     font-size: calc(10px + 1vmin) !important;
     padding: 21px 0 !important;
+  }
+  .About-portrait {
+    width: 30%;
   }
   .About-div-text {
     width: 60%;
@@ -361,7 +396,10 @@ img::selection {
     padding: 15px 0;
   }
   .About-icon {
-    width: 13px;
+    width: 15px;
+  }
+  .FooterLinks {
+    padding: 5px !important;
   }
   .About-div-contact {
     padding: 30px 0;
@@ -377,11 +415,14 @@ img::selection {
 }
 
 @media screen and (min-width:320px) and (max-width:915px) and (orientation: landscape) {
-  /* .Fade-menu {
-    background-color: rgba(0, 0, 0, 0.290);
-  } */
-  .Art-img {
-    width: 50%;
+  .container {
+    max-width: 100% !important;
+  }
+  .Art-div {
+    width: 88%;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(95px, 1fr));
+    grid-auto-rows: 149px;
   }
   .Slider-item-image {
     max-width: fit-content;

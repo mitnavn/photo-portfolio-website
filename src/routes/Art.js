@@ -1,7 +1,7 @@
 import { useNavigate, useParams } from 'react-router-dom';
 import images from '../img/index1.js';
 import Slider from './Slider.js';
-import { Row, Col } from 'react-bootstrap';
+import { Row } from 'react-bootstrap';
 import {useState, useEffect} from 'react';
 import { fadeIn } from 'react-animations';
 import styled, { keyframes } from 'styled-components';
@@ -84,9 +84,24 @@ function Art() {
                 </Fade>}
             {loading && !photoId &&
                 <div className="Art-div">
+                        {filteredImages.map((img, i) =>
+                            <div key={i} className={img.size}>
+                                <img
+                                src={img.imagePreviewSrc}
+                                onClick={() => clickImg(i)} alt={img.name}
+                                key={img.name}
+                                className="Art-img">
+                                </img>
+                            </div>
+                        )}
+                    
+                </div>
+            }
+            {/* {loading && !photoId &&
+                <div className="Art-div">
                     <Row >
                         {filteredImages.map((img, i) =>
-                            <Col md='2' sm="3" xs="3" key={i} className="Art-col">
+                            <Col xl="1" md='2' sm="3" xs="3" key={i} className="Art-col">
                                 <img
                                 src={img.imagePreviewSrc}
                                 onClick={() => clickImg(i)} alt={img.name}
@@ -97,7 +112,7 @@ function Art() {
                         )}
                     </Row>
                 </div>
-            }
+            } */}
         </>
     )
 }

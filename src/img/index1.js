@@ -3,6 +3,7 @@ const images = [
         imageSrc: require('./img-01.jpg'),
         imagePreviewSrc: require('./img-01-sm.jpg'),
         category: "Art",
+        size: "img-tall",
         name: "art-01"
     },
     {
@@ -33,6 +34,7 @@ const images = [
         imageSrc: require('./img-06.jpg'),
         imagePreviewSrc: require('./img-06-sm.jpg'),
         category: "Art",
+        size: "img-tall",
         name: "art-06"
     },
     {
@@ -45,6 +47,7 @@ const images = [
         imageSrc: require('./img-08.jpg'),
         imagePreviewSrc: require('./img-08-sm.jpg'),
         category: "Art",
+        size: "img-big",
         name: "art-08"
     },
     {
@@ -105,12 +108,14 @@ const images = [
         imageSrc: require('./img-18.jpg'),
         imagePreviewSrc: require('./img-18-sm.jpg'),
         category: "Art",
+        size: "img-wide",
         name: "art-18"
     },
     {
         imageSrc: require('./img-19.jpg'),
         imagePreviewSrc: require('./img-19-sm.jpg'),
         category: "Editorial-i",
+        size: "img-big",
         name: "editorial-1-01"
     },
     {
@@ -135,6 +140,7 @@ const images = [
         imageSrc: require('./img-23.jpg'),
         imagePreviewSrc: require('./img-23-sm.jpg'),
         category: "Editorial-i",
+        size: "img-tall",
         name: "editorial-1-05"
     },
     {
@@ -147,6 +153,7 @@ const images = [
         imageSrc: require('./img-25.jpg'),
         imagePreviewSrc: require('./img-25-sm.jpg'),
         category: "Editorial-i",
+        size: "img-wide",
         name: "editorial-1-07"
     },
     {
@@ -165,6 +172,7 @@ const images = [
         imageSrc: require('./img-28.jpg'),
         imagePreviewSrc: require('./img-28-sm.jpg'),
         category: "Editorial-ii",
+        size: "img-big",
         name: "editorials-2-01"
     },
     {
@@ -177,6 +185,7 @@ const images = [
         imageSrc: require('./img-30.jpg'),
         imagePreviewSrc: require('./img-30-sm.jpg'),
         category: "Editorial-ii",
+        size: "img-tall",
         name: "editorials-2-03"
     },
     {
@@ -225,6 +234,7 @@ const images = [
         imageSrc: require('./img-38.jpg'),
         imagePreviewSrc: require('./img-38-sm.jpg'),
         category: "Editorial-ii",
+        size: "img-wide",
         name: "editorials-2-11"
     },
     {
@@ -243,6 +253,7 @@ const images = [
         imageSrc: require('./img-41.jpg'),
         imagePreviewSrc: require('./img-41-sm.jpg'),
         category: "Editorial-ii",
+        size: "img-wide",
         name: "editorials-2-14"
     },
     {
@@ -255,6 +266,7 @@ const images = [
         imageSrc: require('./img-43.jpg'),
         imagePreviewSrc: require('./img-43-sm.jpg'),
         category: "Editorial-iii",
+        size: "img-big",
         name: "editorials-3-02"
     },
     {
@@ -273,6 +285,7 @@ const images = [
         imageSrc: require('./img-46.jpg'),
         imagePreviewSrc: require('./img-46-sm.jpg'),
         category: "Editorial-iii",
+        size: "img-tall",
         name: "editorials-3-05"
     },
     {
@@ -297,6 +310,7 @@ const images = [
         imageSrc: require('./img-50.jpg'),
         imagePreviewSrc: require('./img-50-sm.jpg'),
         category: "Editorial-iii",
+        size: "img-wide",
         name: "editorials-3-09"
     },
     {
@@ -333,6 +347,7 @@ const images = [
         imageSrc: require('./img-57.jpg'),
         imagePreviewSrc: require('./img-57-sm.jpg'),
         category: "Editorial-iv",
+        size: "img-tall",
         name: "editorials-4-02"
     },
     {
@@ -351,6 +366,7 @@ const images = [
         imageSrc: require('./img-60.jpg'),
         imagePreviewSrc: require('./img-60-sm.jpg'),
         category: "Editorial-iv",
+        size: "img-big",
         name: "editorials-4-05"
     },
     {
@@ -369,6 +385,7 @@ const images = [
         imageSrc: require('./img-63.jpg'),
         imagePreviewSrc: require('./img-63-sm.jpg'),
         category: "Editorial-iv",
+        size: "img-wide",
         name: "editorials-4-08"
     },
     {
@@ -399,6 +416,7 @@ const images = [
         imageSrc: require('./img-68.jpg'),
         imagePreviewSrc: require('./img-68-sm.jpg'),
         category: "Editorial-v",
+        size: "img-big",
         name: "editorials-5-01"
     },
     {
@@ -411,6 +429,7 @@ const images = [
         imageSrc: require('./img-70.jpg'),
         imagePreviewSrc: require('./img-70-sm.jpg'),
         category: "Editorial-v",
+        size: "img-tall",
         name: "editorials-5-03"
     },
     {
@@ -447,12 +466,14 @@ const images = [
         imageSrc: require('./img-76.jpg'),
         imagePreviewSrc: require('./img-76-sm.jpg'),
         category: "Editorial-v",
+        size: "img-wide",
         name: "editorials-5-09"
     },
     {
         imageSrc: require('./img-77.jpg'),
         imagePreviewSrc: require('./img-77-sm.jpg'),
         category: "Editorial-v",
+        size: "img-wide",
         name: "editorials-5-10"
     },
     {
@@ -489,6 +510,7 @@ const images = [
         imageSrc: require('./img-83.jpg'),
         imagePreviewSrc: require('./img-83-sm.jpg'),
         category: "Film",
+        size: "img-tall",
         name: "film-05"
     },
     {
@@ -501,6 +523,7 @@ const images = [
         imageSrc: require('./img-85.jpg'),
         imagePreviewSrc: require('./img-85-sm.jpg'),
         category: "Film",
+        size: "img-big",
         name: "film-07"
     },
     {
@@ -519,6 +542,7 @@ const images = [
         imageSrc: require('./img-88.jpg'),
         imagePreviewSrc: require('./img-88-sm.jpg'),
         category: "Film",
+        size: "img-wide",
         name: "film-10"
     },
     {
@@ -531,6 +555,7 @@ const images = [
         imageSrc: require('./img-90.jpg'),
         imagePreviewSrc: require('./img-90-sm.jpg'),
         category: "Film",
+        size: "img-wide",
         name: "film-12"
     },
     {
@@ -543,6 +568,7 @@ const images = [
         imageSrc: require('./img-92.jpg'),
         imagePreviewSrc: require('./img-92-sm.jpg'),
         category: "Film",
+        size: "img-wide",
         name: "film-14"
     },
     {
@@ -573,6 +599,7 @@ const images = [
         imageSrc: require('./img-97.jpg'),
         imagePreviewSrc: require('./img-97-sm.jpg'),
         category: "Portraits",
+        size: "img-big",
         name: "portraits-01"
     },
     {
@@ -591,6 +618,7 @@ const images = [
         imageSrc: require('./img-100.jpg'),
         imagePreviewSrc: require('./img-100-sm.jpg'),
         category: "Portraits",
+        size: "img-tall",
         name: "portraits-04"
     },
     {
@@ -663,6 +691,7 @@ const images = [
         imageSrc: require('./img-112.jpg'),
         imagePreviewSrc: require('./img-112-sm.jpg'),
         category: "Portraits",
+        size: "img-tall",
         name: "portraits-16"
     },
     {
@@ -681,6 +710,7 @@ const images = [
         imageSrc: require('./img-115.jpg'),
         imagePreviewSrc: require('./img-115-sm.jpg'),
         category: "Portraits",
+        size: "img-big",
         name: "portraits-19"
     },
     {
@@ -741,6 +771,7 @@ const images = [
         imageSrc: require('./img-125.jpg'),
         imagePreviewSrc: require('./img-125-sm.jpg'),
         category: "Portraits",
+        size: "img-tall",
         name: "portraits-29"
     },
     {
@@ -759,6 +790,7 @@ const images = [
         imageSrc: require('./img-128.jpg'),
         imagePreviewSrc: require('./img-128-sm.jpg'),
         category: "Portraits",
+        size: "img-big",
         name: "portraits-32"
     },
     {
@@ -807,6 +839,7 @@ const images = [
         imageSrc: require('./img-136.jpg'),
         imagePreviewSrc: require('./img-136-sm.jpg'),
         category: "Portraits",
+        size: "img-wide",
         name: "portraits-40"
     },
     {
@@ -819,6 +852,7 @@ const images = [
         imageSrc: require('./img-138.jpg'),
         imagePreviewSrc: require('./img-138-sm.jpg'),
         category: "Street-Style-i",
+        size: "img-big",
         name: "street-style-1-02"
     },
     {
@@ -855,6 +889,7 @@ const images = [
         imageSrc: require('./img-144.jpg'),
         imagePreviewSrc: require('./img-144-sm.jpg'),
         category: "Street-Style-i",
+        size: "img-tall",
         name: "street-style-1-08"
     },
     {
@@ -891,6 +926,7 @@ const images = [
         imageSrc: require('./img-150.jpg'),
         imagePreviewSrc: require('./img-150-sm.jpg'),
         category: "Street-Style-i",
+        size: "img-tall",
         name: "street-style-1-14"
     },
     {
@@ -903,6 +939,7 @@ const images = [
         imageSrc: require('./img-152.jpg'),
         imagePreviewSrc: require('./img-152-sm.jpg'),
         category: "Street-Style-i",
+        size: "img-big",
         name: "street-style-1-16"
     },
     {
@@ -987,6 +1024,7 @@ const images = [
         imageSrc: require('./img-166.jpg'),
         imagePreviewSrc: require('./img-166-sm.jpg'),
         category: "Street-Style-i",
+        size: "img-tall",
         name: "street-style-1-30"
     },
     {
@@ -999,6 +1037,7 @@ const images = [
         imageSrc: require('./img-168.jpg'),
         imagePreviewSrc: require('./img-168-sm.jpg'),
         category: "Street-Style-i",
+        size: "img-wide",
         name: "street-style-1-32"
     },
     {
@@ -1065,6 +1104,7 @@ const images = [
         imageSrc: require('./img-179.jpg'),
         imagePreviewSrc: require('./img-179-sm.jpg'),
         category: "Street-Style-i",
+        size: "img-wide",
         name: "street-style-1-43"
     },
     {
@@ -1083,6 +1123,7 @@ const images = [
         imageSrc: require('./img-182.jpg'),
         imagePreviewSrc: require('./img-182-sm.jpg'),
         category: "Wedding-i",
+        size: "img-tall",
         name: "wedding-1-03"
     },
     {
@@ -1095,6 +1136,7 @@ const images = [
         imageSrc: require('./img-184.jpg'),
         imagePreviewSrc: require('./img-184-sm.jpg'),
         category: "Wedding-i",
+        size: "img-big",
         name: "wedding-1-05"
     },
     {
@@ -1167,6 +1209,7 @@ const images = [
         imageSrc: require('./img-196.jpg'),
         imagePreviewSrc: require('./img-196-sm.jpg'),
         category: "Wedding-i",
+        size: "img-wide",
         name: "wedding-1-17"
     },
     {
@@ -1197,6 +1240,7 @@ const images = [
         imageSrc: require('./img-201.jpg'),
         imagePreviewSrc: require('./img-201-sm.jpg'),
         category: "Wedding-i",
+        size: "img-wide",
         name: "wedding-1-22"
     },
     {
@@ -1251,12 +1295,14 @@ const images = [
         imageSrc: require('./img-210.jpg'),
         imagePreviewSrc: require('./img-210-sm.jpg'),
         category: "Wedding-i",
+        size: "img-big",
         name: "wedding-1-31"
     },
     {
         imageSrc: require('./img-211.jpg'),
         imagePreviewSrc: require('./img-211-sm.jpg'),
         category: "Wedding-i",
+        size: "img-wide",
         name: "wedding-1-32"
     },
     {
@@ -1275,6 +1321,7 @@ const images = [
         imageSrc: require('./img-214.jpg'),
         imagePreviewSrc: require('./img-214-sm.jpg'),
         category: "Wedding-i",
+        size: "img-wide",
         name: "wedding-1-35"
     },
     {
@@ -1329,6 +1376,7 @@ const images = [
         imageSrc: require('./img-223.jpg'),
         imagePreviewSrc: require('./img-223-sm.jpg'),
         category: "Wedding-ii",
+        size: "img-big",
         name: "wedding-2-01"
     },
     {
@@ -1395,12 +1443,14 @@ const images = [
         imageSrc: require('./img-234.jpg'),
         imagePreviewSrc: require('./img-234-sm.jpg'),
         category: "Wedding-ii",
+        size: "img-wide",
         name: "wedding-2-12"
     },
     {
         imageSrc: require('./img-235.jpg'),
         imagePreviewSrc: require('./img-235-sm.jpg'),
         category: "Wedding-ii",
+        size: "img-wide",
         name: "wedding-2-13"
     },
     {
@@ -1419,6 +1469,7 @@ const images = [
         imageSrc: require('./img-238.jpg'),
         imagePreviewSrc: require('./img-238-sm.jpg'),
         category: "Wedding-ii",
+        size: "img-big",
         name: "wedding-2-16"
     },
     {
@@ -1437,12 +1488,14 @@ const images = [
         imageSrc: require('./img-241.jpg'),
         imagePreviewSrc: require('./img-241-sm.jpg'),
         category: "Wedding-ii",
+        size: "img-tall",
         name: "wedding-2-19"
     },
     {
         imageSrc: require('./img-242.jpg'),
         imagePreviewSrc: require('./img-242-sm.jpg'),
         category: "Wedding-ii",
+        size: "img-big",
         name: "wedding-2-20"
     },
     {

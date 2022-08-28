@@ -5,11 +5,12 @@ function  About() {
     return (
         <div className="About">
             <div className="About-div-text">
+                <img className='About-portrait' src='https://media-exp1.licdn.com/dms/image/C5603AQGuHp1tkzZCqw/profile-displayphoto-shrink_200_200/0/1578659883568?e=1666828800&v=beta&t=oSIrb1H5fJVGWCh8T9CBY4hrANNtD-wrGy11013us2w' alt="portrait"></img>
                 <p className="About-text">
                     Anna Sokur is a photographer based in Copenhagen.
                 </p>
                 <p className="About-text">Selected clients and publications:
-                    Maja Brix, Lunar, American Dreams, Soundvenue, Nordic Style Magazine, Volant Magazine, Pap Magazine, PhotoVogue Italia.
+                    Maja Brix, Lunar, American Dreams, Soundvenue, Nordic Style Magazine, Volant Magazine, Pap Magazine and Moda Operandi.
                 </p>
                 <p className="About-text">Her work was exhibited at the 'Tell Me a Story' exhibition at Galerie Joseph in Paris.</p>
             </div>
