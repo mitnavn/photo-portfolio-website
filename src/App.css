@@ -339,9 +339,6 @@ img::selection {
 }
 
 @media screen and (max-width: 600px) {
-  .container {
-    position: fixed !important;
-  }
   .Fade-menu {
     margin-top: 5px;
   }
