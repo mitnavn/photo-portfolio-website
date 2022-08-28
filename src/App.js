@@ -7,18 +7,11 @@ import ErrorPage from './routes/ErrorPage';
 import Art from './routes/Art';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container } from 'react-bootstrap';
-// import {Helmet} from "react-helmet";
 
 function App() {
 
   return (
     <div className="App">
-      {/* <Helmet>
-        <meta charSet="utf-8" />
-        <title>Anna Sokur</title>
-        <link rel="canonical" href="http://mysite.com/example" />
-        <meta name="description" content="Anna Sokur icon" />
-      </Helmet> */}
       <div className="App-body">
       <Container >
         <div className="App-navbar">
