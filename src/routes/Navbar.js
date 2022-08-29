@@ -1,10 +1,6 @@
 import { useState } from 'react';
 import { Nav, Container, Offcanvas, CloseButton } from 'react-bootstrap';
 import { CgMenu } from 'react-icons/cg';
-// import { fadeIn, fadeOutLeft } from 'react-animations';
-// import styled, { keyframes } from 'styled-components';
-
-// const Fade = styled.div`animation: 1s ${keyframes`${fadeIn}`}`;
 
 function Navigbar() {
     const [displayMenu, setDisplayMenu] = useState(false);
@@ -19,7 +15,6 @@ function Navigbar() {
     return (
         <Container>
             <span onClick={showMenu} className="Menu" ><CgMenu className="Menu-icon"/></span>
-
             <Offcanvas show={displayMenu} onHide={closeMenu} className="Offcanvas-menu">
                 <Offcanvas.Header>
                     <CloseButton onClick={closeMenu} variant="white"/>

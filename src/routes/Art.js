@@ -97,22 +97,6 @@ function Art() {
                     
                 </div>
             }
-            {/* {loading && !photoId &&
-                <div className="Art-div">
-                    <Row >
-                        {filteredImages.map((img, i) =>
-                            <Col xl="1" md='2' sm="3" xs="3" key={i} className="Art-col">
-                                <img
-                                src={img.imagePreviewSrc}
-                                onClick={() => clickImg(i)} alt={img.name}
-                                key={img.name}
-                                className="Art-img">
-                                </img>
-                            </Col>
-                        )}
-                    </Row>
-                </div>
-            } */}
         </>
     )
 }

@@ -20,7 +20,6 @@ body {
 }
 
 .LandingPage-body {
-  /* min-height: 100vh; */
   width: 100%;
   height: 100%;
   display: flex;
@@ -64,7 +63,6 @@ img::selection {
 }
 
 .nav-link {
-  /* color: rgb(175, 172, 172) !important; */
   color: white !important;
   font-size: calc(6px + 1vmin) !important;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
@@ -162,7 +160,6 @@ img::selection {
   color: grey !important;
   text-decoration: none !important;
   font-size: calc(6px + 1vmin) !important;
-  /* padding: 30px 0 !important; */
 }
 
 .Slider-back-btn:hover {
@@ -195,10 +192,6 @@ img::selection {
   margin: 5px;
 }
 
-/* .About-icon {
-  width: 25px;
-} */
-
 .Art-div {
   width: 90%;
   margin: auto;
@@ -210,15 +203,12 @@ img::selection {
 }
 
 .Art-col {
-  /* padding: 20px 0 !important ; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .Art-img {
-  /* width: 80%;
-  height: auto; */
   cursor: pointer;
   max-width: 100%;
   width: 100%;
@@ -316,7 +306,6 @@ img::selection {
   }
   .Slider-back-btn {
     font-size: calc(10px + 1vmin) !important;
-    /* padding: 15px 0 !important; */
   }
   .About-div-text {
     width: 60%;
