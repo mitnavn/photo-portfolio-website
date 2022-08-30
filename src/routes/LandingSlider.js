@@ -4,7 +4,7 @@ import { CgChevronRight, CgChevronLeft } from 'react-icons/cg';
 
 function LandingSlider({photoId, navNext, navPrev}) {
     const [index, setIndex] = useState(photoId || 0);
-    
+
     function indexPlusOne() {
         let newIndex = 0;
         if(index < images.length - 1) {
@@ -24,7 +24,7 @@ function LandingSlider({photoId, navNext, navPrev}) {
         setIndex(newIndex);
         return newIndex;
     }
-
+    
     return (
        <div className="Slider-items">
             <div className="Slider-item-previous" onClick={() => {navPrev(indexMinusOne())}} >

@@ -4,7 +4,7 @@ import LandingSlider from './LandingSlider.js';
 function LandingPage() {
     let {photoId} = useParams();
     let navigate = useNavigate();
-    
+
     function navNext(index) {
         navigate("" + index);
     }
