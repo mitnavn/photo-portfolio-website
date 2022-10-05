@@ -1,14 +1,20 @@
-import images from '../img/index1.js';
+import images from '../../images/index1';
 import { useState } from 'react';
 import { CgChevronRight, CgChevronLeft } from 'react-icons/cg';
 
-function LandingSlider({photoId, navNext, navPrev}) {
+type LandingSliderProps = {
+    photoId?: number,
+    navNext: Function,
+    navPrev: Function,
+}
+
+function LandingSlider({photoId, navNext, navPrev}: LandingSliderProps) {
     const [index, setIndex] = useState(photoId || 0);
 
     function indexPlusOne() {
         let newIndex = 0;
         if(index < images.length - 1) {
-            newIndex = (1*index) + 1;
+            newIndex = index + 1;
         } 
         setIndex(newIndex);
         return newIndex;
@@ -19,7 +25,7 @@ function LandingSlider({photoId, navNext, navPrev}) {
         if (index <= 0) {
             newIndex = images.length - 1;
         } else {
-           newIndex = (1*index) - 1;
+           newIndex = index - 1;
         }
         setIndex(newIndex);
         return newIndex;
@@ -33,7 +39,7 @@ function LandingSlider({photoId, navNext, navPrev}) {
                 </span>
             </div>
             <div className="Slider-item-image">
-                <img src={ images[index].imageSrc } className="Slider-img" alt={images[index].name} />
+                <img src={ images[index].imageSrc.toString() } className="Slider-img" alt={images[index].name} />
             </div>
             <div className="Slider-item-next" onClick={() => {navNext(indexPlusOne())}}>
                 <span>

@@ -1,4 +1,12 @@
-const images = [
+export interface ImageMeta {
+    imageSrc: NodeRequire,
+    imagePreviewSrc: NodeRequire,
+    category: string,
+    size?: string,
+    name: string,
+}
+
+const images: ImageMeta[] = [
     {
         imageSrc: require('./img-01.jpg'),
         imagePreviewSrc: require('./img-01-sm.jpg'),

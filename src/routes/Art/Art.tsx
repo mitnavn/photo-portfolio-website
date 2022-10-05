@@ -1,6 +1,6 @@
 import { useNavigate, useParams } from 'react-router-dom';
-import images from '../img/index1.js';
-import Slider from './Slider.js';
+import images, {ImageMeta} from '../../images/index1';
+import Slider from './Slider';
 import { Row } from 'react-bootstrap';
 import {useState, useEffect} from 'react';
 import { fadeIn } from 'react-animations';
@@ -10,22 +10,22 @@ import PropagateLoader from 'react-spinners/PropagateLoader';
 const Fade = styled.div`animation: 1s ${keyframes`${fadeIn}`}`;
 
 function Art() {
-    let {category, photoId} = useParams();
+    let {category, photoId} = useParams() as {category?: string, photoId?: number};
     let filteredImages = images.filter(image => image.category.toLowerCase() === category);
     let navigate = useNavigate();
 
     const [loading, setLoading] = useState(false);
-    let newCategory = category.replace(/-/g, " ");
+    let newCategory = category!.replace(/-/g, " ");
     let loadCategory = newCategory.charAt(0).toUpperCase() + newCategory.slice(1).toLowerCase();
    
     const [imagesToLoad, setImagesToLoad]  = useState(filteredImages.map(i=> i.imagePreviewSrc));
 
     useEffect(() => {
         if(!photoId) {
-            const loadImage = image => {
+            const loadImage = (image: ImageMeta) => {
                 return new Promise((resolve, reject) => {
-                  const loadImg = new Image()
-                  loadImg.src = image.imagePreviewSrc
+                  const loadImg = new Image();
+                  loadImg.src = image.imagePreviewSrc.toString();
                   loadImg.onload = () =>
                     setTimeout(() => {
                       resolve(image.imagePreviewSrc);
@@ -43,7 +43,7 @@ function Art() {
         }
     }, [filteredImages, photoId, imagesToLoad])
 
-    function removeImage(imageSrc, imagesToLoad) {
+    function removeImage(imageSrc: NodeRequire, imagesToLoad: Array<string | any>) {
         imagesToLoad.splice(imagesToLoad.indexOf(imageSrc), 1);
         setImagesToLoad(imagesToLoad);
         if(imagesToLoad.length === 0) {
@@ -51,19 +51,19 @@ function Art() {
         }
     }
 
-    function clickImg(photoId) {
+    function clickImg(photoId?: number) {
         navigate("" + photoId);
     }
 
-    function navNext(index) {
+    function navNext(index: number) {
         navigate("" + index);
     }
 
-    function navPrev(index) {
+    function navPrev(index: number) {
         navigate("" + index);
     }
 
-    function navBack(index){
+    function navBack(index: number){
         navigate("" + index);
         setLoading(imagesToLoad.length === 0);
     }
@@ -87,7 +87,7 @@ function Art() {
                         {filteredImages.map((img, i) =>
                             <div key={i} className={img.size}>
                                 <img
-                                src={img.imagePreviewSrc}
+                                src={img.imagePreviewSrc.toString()}
                                 onClick={() => clickImg(i)} alt={img.name}
                                 key={img.name}
                                 className="Art-img">

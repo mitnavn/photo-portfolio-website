@@ -1,15 +1,15 @@
 import { useNavigate, useParams } from 'react-router-dom';
-import LandingSlider from './LandingSlider.js';
+import LandingSlider from './LandingSlider';
 
 function LandingPage() {
-    let {photoId} = useParams();
+    let {photoId} = useParams() as { photoId?: number };
     let navigate = useNavigate();
 
-    function navNext(index) {
+    function navNext(index: number) {
         navigate("" + index);
     }
 
-    function navPrev(index) {
+    function navPrev(index: number) {
         navigate("" + index);
     }
 

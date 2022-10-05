@@ -1,11 +1,11 @@
 import './App.css';
-import LandingPage from './routes/LandingPage.js';
-import Navigbar from './routes/Navbar.js';
-import About from './routes/About';
-import { Routes, Route } from 'react-router-dom';
-import ErrorPage from './routes/ErrorPage';
-import Art from './routes/Art';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import LandingPage from './routes/LandingPage/LandingPage';
+import Navigbar from './components/navigation/Navbar';
+import Art from './routes/Art/Art';
+import About from './routes/About/About';
+import ErrorPage from './routes/ErrorPage/ErrorPage';
+import { Routes, Route } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 
 function App() {
