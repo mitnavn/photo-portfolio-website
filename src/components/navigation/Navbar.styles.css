@@ -1,0 +1,91 @@
+.Menu {
+    display: block;
+    margin-top: 30px;
+  }
+  
+  .Menu-icon {
+    display: block;
+    color: grey;
+  }
+  
+  .Menu-icon:hover {
+    color: white;
+    cursor: pointer;
+  }
+  
+  .Fade-menu {
+    margin-top: 2px;
+  }
+  
+  .Navbar-Link {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .offcanvas-header {
+    justify-content: right !important;
+  }
+  
+  .Offcanvas-menu {
+    width: 50% !important;
+    background: rgba(255, 254, 254, 0.11) !important;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
+    backdrop-filter: blur(6px) !important;
+    -webkit-backdrop-filter: blur(6px) !important;
+    border-right: 1px solid rgba(197, 197, 197, 0.3) !important;
+  }
+  
+  .nav-link:hover {
+    letter-spacing: 1px;
+  }
+  
+  .nav-link-uppercase {
+    text-transform: uppercase !important;
+  }
+
+  .nav-link {
+    color: white !important;
+    font-size: calc(6px + 1vmin) !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    text-align: right !important;
+    padding: 2px !important;
+  }
+  
+  @media screen and (min-width: 1400px) {
+    .container {
+      max-width: 75% !important;
+    }
+  }
+  
+  @media screen and (max-width: 924px) {
+    .offcanvas-body {
+      padding: 0 15px !important;
+    }
+    .nav-link {
+      color: white !important;
+      font-size: calc(8px + 1vmin) !important;
+      padding: 2px 0 !important;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .Fade-menu {
+      margin-top: 5px;
+    }
+    .nav-link {
+      color: white !important;
+      font-size: calc(10px + 1vmin) !important;
+      padding: 2px 0 !important;
+    }
+  }
+  
+  @media screen and (min-width:320px) and (max-width:915px) and (orientation: landscape) {
+    .container {
+      max-width: 100% !important;
+    }
+    .nav-link {
+      color: white !important;
+      font-size: calc(10px + 1vmin) !important;
+      padding: 3px 0 !important;
+    }
+  }

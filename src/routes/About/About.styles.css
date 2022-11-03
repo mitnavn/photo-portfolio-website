@@ -1,0 +1,140 @@
+  .About {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .About-div-text {
+    width: 50%;
+    font-size: calc(6px + 1vmin);
+  }
+  
+  .About-div-contact {
+    padding: 25px 0;
+  }
+  
+  .About-text {
+    margin: 5px;
+    padding: 15px 0;
+  }
+  
+  .About-text-contact {
+    font-size: calc(6px + 1vmin);
+    margin: 5px;
+  }
+
+  .About-portrait {
+    width: 15%;
+  }
+
+  .Contact-link {
+    color: white;
+    text-decoration: none;
+    font-size: calc(6px + 1vmin);
+    padding: 0 13px;
+  }
+  
+  .Contact-link:hover {
+    color: white;
+    text-decoration: none;
+  }
+
+  .Links {
+    color: white !important;
+    text-decoration: none !important;
+    font-size: calc(6px + 1vmin) !important;
+  }
+
+  @media screen and (min-width: 1400px) {
+    .container {
+      max-width: 75% !important;
+    }
+  }
+  
+  @media screen and (max-width: 924px) {
+    .offcanvas-body {
+      padding: 0 15px !important;
+    }
+    .Links {
+      font-size: calc(8px + 1vmin) !important;
+    }
+    .About-div-text {
+      width: 60%;
+    }
+    .About-text {
+      font-size: calc(10px + 1vmin);
+      padding: 15px 0;
+    }
+    .About-div-contact {
+      padding: 30px 0;
+      width: 39%;
+    }
+    .About-text-contact {
+      font-size: calc(10px + 1vmin);
+      margin: 5px;
+    }
+    .Contact-link {
+      font-size: calc(10px + 1vmin) !important;
+    }  
+  }
+  
+  @media screen and (max-width: 600px) {
+    .Links {
+      font-size: calc(10px + 1vmin) !important;
+    }
+    .About-portrait {
+      width: 30%;
+    }
+    .About-div-text {
+      width: 60%;
+    }
+    .About-text {
+      font-size: calc(10px + 1vmin);
+      padding: 15px 0;
+    }
+    .About-icon {
+      width: 15px;
+    }
+    .Links {
+      padding: 5px !important;
+    }
+    .About-div-contact {
+      padding: 30px 0;
+      width: 39%;
+    }
+    .About-text-contact {
+      font-size: calc(10px + 1vmin);
+      margin: 5px;
+    }
+    .Contact-link {
+      font-size: calc(10px + 1vmin) !important;
+    }
+  }
+  
+  @media screen and (min-width:320px) and (max-width:915px) and (orientation: landscape) {
+    .container {
+      max-width: 100% !important;
+    }
+    .Links {
+      font-size: calc(10px + 1vmin) !important;
+    }
+    .About-div-text {
+      width: 60%;
+    }
+    .About-text {
+      font-size: calc(7px + 2vmin);
+      padding: 15px 0;
+    }
+    .About-div-contact {
+      padding: 0;
+      width: 46%;
+    }
+    .About-text-contact {
+      font-size: calc(7px + 2vmin);
+      margin: 5px;
+    }
+    .Contact-link {
+      font-size: calc(10px + 1vmin) !important;
+    }
+  }

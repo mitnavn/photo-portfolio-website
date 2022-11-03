@@ -1,17 +1,11 @@
-import { useNavigate, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import LandingSlider from './LandingSlider';
+import useLandingPageNavigHook from './Hooks/LandingPageNavigHook';
+import './LandingPage.styles.css';
 
 function LandingPage() {
     let {photoId} = useParams() as { photoId?: number };
-    let navigate = useNavigate();
-
-    function navNext(index: number) {
-        navigate("" + index);
-    }
-
-    function navPrev(index: number) {
-        navigate("" + index);
-    }
+    const {navNext, navPrev} = useLandingPageNavigHook();
 
     return (
         <div className="LandingPage-body">

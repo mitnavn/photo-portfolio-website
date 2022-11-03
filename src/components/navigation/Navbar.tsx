@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Nav, Container, Offcanvas, CloseButton } from 'react-bootstrap';
 import { CgMenu } from 'react-icons/cg';
+import './Navbar.styles.css';
 
 function Navigbar() {
     const [displayMenu, setDisplayMenu] = useState(false);

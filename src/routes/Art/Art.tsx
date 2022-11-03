@@ -1,72 +1,23 @@
-import { useNavigate, useParams } from 'react-router-dom';
-import images, {ImageMeta} from '../../images/index1';
+import { useParams } from 'react-router-dom';
+import useArtImgLoadHook from './Hooks/ArtImgLoadHook';
+import useArtNavigHook from './Hooks/ArtNavigHook';
 import Slider from './Slider';
 import { Row } from 'react-bootstrap';
-import {useState, useEffect} from 'react';
 import { fadeIn } from 'react-animations';
-import styled, { keyframes } from 'styled-components';
 import PropagateLoader from 'react-spinners/PropagateLoader';
+import styled, { keyframes } from 'styled-components';
+import './Art.styles.css';
 
 const Fade = styled.div`animation: 1s ${keyframes`${fadeIn}`}`;
 
 function Art() {
     let {category, photoId} = useParams() as {category?: string, photoId?: number};
-    let filteredImages = images.filter(image => image.category.toLowerCase() === category);
-    let navigate = useNavigate();
-
-    const [loading, setLoading] = useState(false);
+    
+    const {loading, setLoading, filteredImages, imagesToLoad} = useArtImgLoadHook(photoId, category);
+    const {clickImg, navPrev, navNext, navBack} = useArtNavigHook(setLoading, imagesToLoad);
+    
     let newCategory = category!.replace(/-/g, " ");
     let loadCategory = newCategory.charAt(0).toUpperCase() + newCategory.slice(1).toLowerCase();
-   
-    const [imagesToLoad, setImagesToLoad]  = useState(filteredImages.map(i=> i.imagePreviewSrc));
-
-    useEffect(() => {
-        if(!photoId) {
-            const loadImage = (image: ImageMeta) => {
-                return new Promise((resolve, reject) => {
-                  const loadImg = new Image();
-                  loadImg.src = image.imagePreviewSrc.toString();
-                  loadImg.onload = () =>
-                    setTimeout(() => {
-                      resolve(image.imagePreviewSrc);
-                      removeImage(image.imagePreviewSrc, imagesToLoad);
-                    }, 2000)
-          
-                  loadImg.onerror = err => reject(err)
-                })
-              }
-              
-              Promise.all(filteredImages.map(image => loadImage(image)))
-                .catch(err => console.log("Error", err))
-        } else if (photoId) {
-            setLoading(true);
-        }
-    }, [filteredImages, photoId, imagesToLoad])
-
-    function removeImage(imageSrc: NodeRequire, imagesToLoad: Array<string | any>) {
-        imagesToLoad.splice(imagesToLoad.indexOf(imageSrc), 1);
-        setImagesToLoad(imagesToLoad);
-        if(imagesToLoad.length === 0) {
-            setLoading(true);
-        }
-    }
-
-    function clickImg(photoId?: number) {
-        navigate("" + photoId);
-    }
-
-    function navNext(index: number) {
-        navigate("" + index);
-    }
-
-    function navPrev(index: number) {
-        navigate("" + index);
-    }
-
-    function navBack(index: number){
-        navigate("" + index);
-        setLoading(imagesToLoad.length === 0);
-    }
 
     return (
         <>
