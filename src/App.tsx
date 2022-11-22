@@ -5,16 +5,17 @@ import Navigbar from './components/navigation/Navbar';
 import Art from './routes/Art/Art';
 import About from './routes/About/About';
 import ErrorPage from './routes/ErrorPage/ErrorPage';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 
 function App() {
 
   return (
+    <BrowserRouter>
     <div className="App">
       <div className="App-body">
       <Container >
-        <div className="App-navbar">
+        <div className="App-navbar" data-testid="navig">
           <Navigbar />
         </div>
         <Routes>
@@ -30,6 +31,7 @@ function App() {
       </Container>
       </div>
     </div>
+    </BrowserRouter>
   );
 }
 

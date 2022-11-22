@@ -2,7 +2,11 @@ import { Button, Row, Col } from 'react-bootstrap';
 import { FiMail, FiInstagram } from 'react-icons/fi';
 import './About.styles.css';
 
-function  About() {
+export function handleClick() {
+    return window.location = "mailto:sokuranna@outlook.com" as string & Location;
+}
+
+function About() {
     return (
         <div className="About">
             <div className="About-div-text">
@@ -20,7 +24,7 @@ function  About() {
                 <p className="About-text-contact">Contact:</p>
                 <Col>
                     <span><FiMail className="About-icon"/></span>
-                    <Button variant="link" className="Links" onClick={() => window.location = "mailto:sokuranna@outlook.com" as string & Location}>Send an e-mail</Button>
+                    <Button variant="link" className="Links" onClick={handleClick} data-testid="email-button">Send an e-mail</Button>
                 </Col>
                 <Col>
                     <span><FiInstagram className="About-icon" /></span>

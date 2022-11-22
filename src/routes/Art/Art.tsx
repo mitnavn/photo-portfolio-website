@@ -38,7 +38,7 @@ function Art() {
                         {filteredImages.map((img, i) =>
                             <div key={i} className={img.size}>
                                 <img
-                                src={img.imagePreviewSrc.toString()}
+                                src={img.imagePreviewSrc}
                                 onClick={() => clickImg(i)} alt={img.name}
                                 key={img.name}
                                 className="Art-img">

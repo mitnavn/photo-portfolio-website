@@ -1,6 +1,6 @@
 import {useNavigate} from 'react-router-dom';
 
-function useArtNavigHook(setLoading: React.Dispatch<React.SetStateAction<boolean>>, imagesToLoad: NodeRequire[]) {
+function useArtNavigHook(setLoading: React.Dispatch<React.SetStateAction<boolean>>, imagesToLoad: string[]) {
 
     let navigate = useNavigate();
 

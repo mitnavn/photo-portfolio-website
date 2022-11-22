@@ -14,15 +14,15 @@ function LandingSlider({photoId, navNext, navPrev}: LandingSliderProps) {
     
     return (
        <div className="Slider-items">
-            <div className="Slider-item-previous" onClick={() => {navPrev(indexMinusOne())}} >
+            <div className="Slider-item-previous" data-testid="click-prev" onClick={() => {navPrev(indexMinusOne())}} >
                 <span>
                     <CgChevronLeft className="Slider-icon" />
                 </span>
             </div>
             <div className="Slider-item-image">
-                <img src={ images[index].imageSrc.toString() } className="Slider-img" alt={images[index].name} />
+                <img src={images[index].imageSrcUrl} alt={images[index].name} className="Slider-img" />
             </div>
-            <div className="Slider-item-next" onClick={() => {navNext(indexPlusOne())}}>
+            <div className="Slider-item-next" data-testid="click-next" onClick={() => {navNext(indexPlusOne())}}>
                 <span>
                     <CgChevronRight className="Slider-icon" />
                 </span>

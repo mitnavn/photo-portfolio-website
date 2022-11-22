@@ -12,6 +12,7 @@ type SliderProps = {
 }
 
 function Slider({photoId, navNext, navPrev, category, navBack}: SliderProps) {
+    debugger;
     const {index, filteredImages, indexMinusOne, indexPlusOne, backToCategory} = useSliderHook(photoId, category);
 
     return (
@@ -22,7 +23,7 @@ function Slider({photoId, navNext, navPrev, category, navBack}: SliderProps) {
                 </span>
             </div>
             <div className="Slider-item-image">
-                <img src={ filteredImages[index].imageSrc.toString() } className="Slider-img" alt={filteredImages[index].name} />
+                <img src={filteredImages[index].imageSrcUrl} className="Slider-img" alt={filteredImages[index].name} />
                 <div className="Slider-item-close" onClick={() => {navBack(backToCategory())}}>
                     <Button variant="link" className="Slider-back-btn">Back</Button>
                 </div>

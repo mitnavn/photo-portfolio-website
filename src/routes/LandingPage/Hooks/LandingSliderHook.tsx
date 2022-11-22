@@ -1,8 +1,8 @@
 import images from '../../../images/index1';
-import { useState } from 'react';
+import React from 'react';
 
 function useLandingSliderHook(photoId?: number) {
-    const [index, setIndex] = useState(photoId || 0);
+    const [index, setIndex] = React.useState(photoId || 0);
 
     function indexPlusOne() {
         let newIndex = 0;
