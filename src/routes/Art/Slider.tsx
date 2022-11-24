@@ -12,7 +12,6 @@ type SliderProps = {
 }
 
 function Slider({photoId, navNext, navPrev, category, navBack}: SliderProps) {
-    debugger;
     const {index, filteredImages, indexMinusOne, indexPlusOne, backToCategory} = useSliderHook(photoId, category);
 
     return (

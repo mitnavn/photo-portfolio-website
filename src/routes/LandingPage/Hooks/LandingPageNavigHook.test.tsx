@@ -10,20 +10,15 @@ jest.mock("react-router-dom", () => ({
 }));
 
 describe('useLandingPageNavigHook', () => {
-    describe('navNext', () => {
-        it('Should navigate user page', () => {
+    describe('Function', () => {
+        it('navNext should navigate user page', () => {
             const {result} = renderHook(() => LandingPageNavigHook());
             act(() => {
                 result.current.navNext(1);
             });
             expect(mockedNavigator).toHaveBeenCalled();
         });
-    });
-});
-
-describe('useLandingPageNavigHook', () => {
-    describe('navPrev', () => {
-        it('Should navigate user page', () => {
+        it('navPrev should navigate user page', () => {
             const {result} = renderHook(() => LandingPageNavigHook());
             act(() => {
                 result.current.navPrev(0);
