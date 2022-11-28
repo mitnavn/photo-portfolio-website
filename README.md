@@ -9,6 +9,7 @@ See it live: https://annasokur.com/
 ## Technologies used
 
 -React
+-Typescript
 -JavaScript
 -HTML
 -SASS
