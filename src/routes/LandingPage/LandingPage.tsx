@@ -4,7 +4,7 @@ import useLandingPageNavigHook from './Hooks/LandingPageNavigHook';
 import './LandingPage.styles.css';
 
 function LandingPage() {
-    let {photoId} = useParams() as { photoId?: number };
+    const {photoId} = useParams() as { photoId?: number };
     const {navNext, navPrev} = useLandingPageNavigHook();
 
     return (

@@ -2,7 +2,7 @@ import {useNavigate} from 'react-router-dom';
 
 function useLandingPageNavigHook() {
 
-    let navigate = useNavigate();
+    const navigate = useNavigate();
 
     function navNext(index: number) {
         navigate("" + index);

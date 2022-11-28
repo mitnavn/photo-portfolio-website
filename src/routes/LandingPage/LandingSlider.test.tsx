@@ -5,7 +5,7 @@ import LandingSlider from './LandingSlider';
 describe('LandingSlider', () => {
     describe('onClick functions', () => {
         it('Should exist', () => {
-            render(<LandingSlider navNext={() => {}} navPrev={() => {}} />);
+            render(<LandingSlider navNext={() => undefined} navPrev={() => undefined} />);
             expect(screen.getByTestId('click-next')).toBeInTheDocument();
             expect(screen.getByTestId('click-prev')).toBeInTheDocument();
         });
@@ -14,10 +14,10 @@ describe('LandingSlider', () => {
             const next = jest.fn(() => {return undefined;});
             const prev = jest.fn(() => {return undefined;});
 
-            const {getByTestId} = render(<LandingSlider navNext={next} navPrev={prev} />);
+            render(<LandingSlider navNext={next} navPrev={prev} />);
 
-            fireEvent.click(getByTestId('click-next'));
-            fireEvent.click(getByTestId('click-prev'));
+            fireEvent.click(screen.getByTestId('click-next'));
+            fireEvent.click(screen.getByTestId('click-prev'));
 
             expect(next).toHaveBeenCalled();
             expect(prev).toHaveBeenCalled();

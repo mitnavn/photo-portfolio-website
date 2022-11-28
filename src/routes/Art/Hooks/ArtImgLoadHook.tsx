@@ -2,7 +2,7 @@ import images, {ImageMeta} from "../../../images/index1";
 import {useState, useEffect} from 'react';
 
 function useArtImgLoadHook(photoId?: number, category?: string) {
-  let filteredImages = images.filter(image => image.category.toLowerCase() === category);
+  const filteredImages = images.filter(image => image.category.toLowerCase() === category);
 
   const [loading, setLoading] = useState(false);
 
@@ -31,13 +31,14 @@ function useArtImgLoadHook(photoId?: number, category?: string) {
     }
     }, [filteredImages, photoId, imagesToLoad]);
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   function removeImage(imageSrcUrl: string, imagesToLoad: Array<string | any>) {
     imagesToLoad.splice(imagesToLoad.indexOf(imageSrcUrl), 1);
     setImagesToLoad(imagesToLoad);
     if(imagesToLoad.length === 0) {
       setLoading(true);
-    };
-  };
+    }
+  }
 
   return {
     loading,

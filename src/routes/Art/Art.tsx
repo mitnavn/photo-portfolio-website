@@ -11,13 +11,14 @@ import './Art.styles.css';
 const Fade = styled.div`animation: 1s ${keyframes`${fadeIn}`}`;
 
 function Art() {
-    let {category, photoId} = useParams() as {category?: string, photoId?: number};
+    const {category, photoId} = useParams() as {category?: string, photoId?: number};
     
     const {loading, setLoading, filteredImages, imagesToLoad} = useArtImgLoadHook(photoId, category);
     const {clickImg, navPrev, navNext, navBack} = useArtNavigHook(setLoading, imagesToLoad);
     
-    let newCategory = category!.replace(/-/g, " ");
-    let loadCategory = newCategory.charAt(0).toUpperCase() + newCategory.slice(1).toLowerCase();
+    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+    const newCategory = category!.replace(/-/g, " ");
+    const loadCategory = newCategory.charAt(0).toUpperCase() + newCategory.slice(1).toLowerCase();
 
     return (
         <>

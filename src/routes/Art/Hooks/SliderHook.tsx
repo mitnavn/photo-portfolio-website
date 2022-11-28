@@ -3,10 +3,10 @@ import { useState } from 'react';
 
 function useSliderHook(photoId?: number, category?: string) {
     const [index, setIndex] = useState(photoId || 0);
-    let filteredImages = images.filter(image => image.category.toLowerCase() === category);
+    const filteredImages = images.filter(image => image.category.toLowerCase() === category);
     
     function indexPlusOne() {
-        let newIndex: number = 0;
+        let newIndex = 0;
         if(index < filteredImages.length - 1) {
             newIndex = (index*1) + 1;
         } 
@@ -15,7 +15,7 @@ function useSliderHook(photoId?: number, category?: string) {
     }
     
     function indexMinusOne() {
-        let newIndex: number = 0;
+        let newIndex = 0;
         if (index <= 0) {
             newIndex = filteredImages.length - 1;
         } else {
@@ -26,7 +26,8 @@ function useSliderHook(photoId?: number, category?: string) {
     }
 
     function backToCategory() {
-        let newIndex: any = '';
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        const newIndex: any = '';
         setIndex(newIndex);
         return newIndex;
     }
